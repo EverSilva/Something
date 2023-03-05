@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+}
+
+html {
+  cursor: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0 0 0 30px;
+  position: relative;
+}
+
+li {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+li.active:before {
+  content: ">";
+  position: absolute;
+  left: 10px;
+}
+
+[data-group="feature"] {
+  display: none;
+}
+
+[data-group="feature"][data-active="true"] {
+  display: block;
+}
